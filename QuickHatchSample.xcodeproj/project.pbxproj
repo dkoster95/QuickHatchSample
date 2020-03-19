@@ -83,13 +83,12 @@
 		7F060C1724240BEA00B3CCDE /* QuickHatchSample */ = {
 			isa = PBXGroup;
 			children = (
-				7F060C1824240BEA00B3CCDE /* AppDelegate.swift */,
-				7F060C1A24240BEA00B3CCDE /* SceneDelegate.swift */,
-				7F060C1C24240BEA00B3CCDE /* ViewController.swift */,
-				7F060C1E24240BEA00B3CCDE /* Main.storyboard */,
-				7F060C2124240BEB00B3CCDE /* Assets.xcassets */,
-				7F060C2324240BEB00B3CCDE /* LaunchScreen.storyboard */,
-				7F060C2624240BEB00B3CCDE /* Info.plist */,
+				7F060C422424110A00B3CCDE /* Application */,
+				7F060C3E2424108300B3CCDE /* Data Providers */,
+				7F060C3F2424108F00B3CCDE /* Models */,
+				7F060C3D2424107A00B3CCDE /* Presenters */,
+				7F060C40242410A900B3CCDE /* Supporting files */,
+				7F060C41242410ED00B3CCDE /* Views */,
 			);
 			path = QuickHatchSample;
 			sourceTree = "<group>";
@@ -109,6 +108,55 @@
 				7F060C3B24240D7F00B3CCDE /* QuickHatch.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F060C3D2424107A00B3CCDE /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		7F060C3E2424108300B3CCDE /* Data Providers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Providers";
+			sourceTree = "<group>";
+		};
+		7F060C3F2424108F00B3CCDE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F060C40242410A900B3CCDE /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				7F060C2124240BEB00B3CCDE /* Assets.xcassets */,
+				7F060C2624240BEB00B3CCDE /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		7F060C41242410ED00B3CCDE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F060C1C24240BEA00B3CCDE /* ViewController.swift */,
+				7F060C1E24240BEA00B3CCDE /* Main.storyboard */,
+				7F060C2324240BEB00B3CCDE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7F060C422424110A00B3CCDE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7F060C1824240BEA00B3CCDE /* AppDelegate.swift */,
+				7F060C1A24240BEA00B3CCDE /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,7 +427,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = QuickHatchSample/Info.plist;
+				INFOPLIST_FILE = "QuickHatchSample/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,7 +448,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = QuickHatchSample/Info.plist;
+				INFOPLIST_FILE = "QuickHatchSample/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
