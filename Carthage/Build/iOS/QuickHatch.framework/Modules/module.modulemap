@@ -1,0 +1,11 @@
+framework module QuickHatch {
+  umbrella header "QuickHatch.h"
+
+  export *
+  module * { export * }
+}
+
+module QuickHatch.Swift {
+    header "QuickHatch-Swift.h"
+    requires objc
+}
