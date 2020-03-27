@@ -15,6 +15,14 @@
 		7F060C2524240BEB00B3CCDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F060C2324240BEB00B3CCDE /* LaunchScreen.storyboard */; };
 		7F060C3024240BEB00B3CCDE /* QuickHatchSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F060C2F24240BEB00B3CCDE /* QuickHatchSampleTests.swift */; };
 		7F060C3C24240D7F00B3CCDE /* QuickHatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F060C3B24240D7F00B3CCDE /* QuickHatch.framework */; };
+		7F3A106F242D1A6600469282 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A106E242D1A6600469282 /* Country.swift */; };
+		7F3A1071242D1C4F00469282 /* FetchCountryDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A1070242D1C4F00469282 /* FetchCountryDataProvider.swift */; };
+		7F3A1073242D1DDE00469282 /* FetchCountryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A1072242D1DDE00469282 /* FetchCountryAPI.swift */; };
+		7F3A1075242D227900469282 /* RestCountriesEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A1074242D227900469282 /* RestCountriesEnvironment.swift */; };
+		7F3A1077242D245000469282 /* CountriesCollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A1076242D245000469282 /* CountriesCollectionPresenter.swift */; };
+		7F3A1079242D285300469282 /* PresentersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A1078242D285300469282 /* PresentersFactory.swift */; };
+		7F426782242D68EE00745C0B /* CountryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F426781242D68EE00745C0B /* CountryCellView.swift */; };
+		7F87BE06242D6C5F006CCC64 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87BE05242D6C5F006CCC64 /* Region.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,14 @@
 		7F060C2F24240BEB00B3CCDE /* QuickHatchSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickHatchSampleTests.swift; sourceTree = "<group>"; };
 		7F060C3124240BEB00B3CCDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F060C3B24240D7F00B3CCDE /* QuickHatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickHatch.framework; path = Carthage/Build/iOS/QuickHatch.framework; sourceTree = "<group>"; };
+		7F3A106E242D1A6600469282 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		7F3A1070242D1C4F00469282 /* FetchCountryDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCountryDataProvider.swift; sourceTree = "<group>"; };
+		7F3A1072242D1DDE00469282 /* FetchCountryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCountryAPI.swift; sourceTree = "<group>"; };
+		7F3A1074242D227900469282 /* RestCountriesEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestCountriesEnvironment.swift; sourceTree = "<group>"; };
+		7F3A1076242D245000469282 /* CountriesCollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesCollectionPresenter.swift; sourceTree = "<group>"; };
+		7F3A1078242D285300469282 /* PresentersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentersFactory.swift; sourceTree = "<group>"; };
+		7F426781242D68EE00745C0B /* CountryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCellView.swift; sourceTree = "<group>"; };
+		7F87BE05242D6C5F006CCC64 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +129,7 @@
 		7F060C3D2424107A00B3CCDE /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				7F3A1076242D245000469282 /* CountriesCollectionPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -120,6 +137,9 @@
 		7F060C3E2424108300B3CCDE /* Data Providers */ = {
 			isa = PBXGroup;
 			children = (
+				7F87BE07242D79CB006CCC64 /* Config */,
+				7F3A1070242D1C4F00469282 /* FetchCountryDataProvider.swift */,
+				7F3A1072242D1DDE00469282 /* FetchCountryAPI.swift */,
 			);
 			path = "Data Providers";
 			sourceTree = "<group>";
@@ -127,6 +147,8 @@
 		7F060C3F2424108F00B3CCDE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7F3A106E242D1A6600469282 /* Country.swift */,
+				7F87BE05242D6C5F006CCC64 /* Region.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -146,6 +168,8 @@
 				7F060C1C24240BEA00B3CCDE /* ViewController.swift */,
 				7F060C1E24240BEA00B3CCDE /* Main.storyboard */,
 				7F060C2324240BEB00B3CCDE /* LaunchScreen.storyboard */,
+				7F3A1078242D285300469282 /* PresentersFactory.swift */,
+				7F426781242D68EE00745C0B /* CountryCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +183,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		7F87BE07242D79CB006CCC64 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				7F3A1074242D227900469282 /* RestCountriesEnvironment.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +201,7 @@
 				7F060C1124240BEA00B3CCDE /* Sources */,
 				7F060C1224240BEA00B3CCDE /* Frameworks */,
 				7F060C1324240BEA00B3CCDE /* Resources */,
+				7F3A107A242D5C2F00469282 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -255,13 +288,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F3A107A242D5C2F00469282 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/QuickHatch.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7F060C1124240BEA00B3CCDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F3A1075242D227900469282 /* RestCountriesEnvironment.swift in Sources */,
+				7F426782242D68EE00745C0B /* CountryCellView.swift in Sources */,
+				7F3A1077242D245000469282 /* CountriesCollectionPresenter.swift in Sources */,
+				7F3A1073242D1DDE00469282 /* FetchCountryAPI.swift in Sources */,
+				7F3A106F242D1A6600469282 /* Country.swift in Sources */,
 				7F060C1D24240BEA00B3CCDE /* ViewController.swift in Sources */,
+				7F3A1071242D1C4F00469282 /* FetchCountryDataProvider.swift in Sources */,
+				7F87BE06242D6C5F006CCC64 /* Region.swift in Sources */,
 				7F060C1924240BEA00B3CCDE /* AppDelegate.swift in Sources */,
+				7F3A1079242D285300469282 /* PresentersFactory.swift in Sources */,
 				7F060C1B24240BEA00B3CCDE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +484,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -434,6 +498,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dk.QuickHatchSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -443,7 +508,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -455,6 +522,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dk.QuickHatchSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
