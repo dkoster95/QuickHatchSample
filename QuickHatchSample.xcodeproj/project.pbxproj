@@ -14,15 +14,12 @@
 		7F060C2224240BEB00B3CCDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F060C2124240BEB00B3CCDE /* Assets.xcassets */; };
 		7F060C2524240BEB00B3CCDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F060C2324240BEB00B3CCDE /* LaunchScreen.storyboard */; };
 		7F060C3024240BEB00B3CCDE /* QuickHatchSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F060C2F24240BEB00B3CCDE /* QuickHatchSampleTests.swift */; };
-		7F060C3C24240D7F00B3CCDE /* QuickHatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F060C3B24240D7F00B3CCDE /* QuickHatch.framework */; };
-		7F3A106F242D1A6600469282 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A106E242D1A6600469282 /* Country.swift */; };
-		7F3A1071242D1C4F00469282 /* FetchCountryDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A1070242D1C4F00469282 /* FetchCountryDataProvider.swift */; };
-		7F3A1073242D1DDE00469282 /* FetchCountryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A1072242D1DDE00469282 /* FetchCountryAPI.swift */; };
-		7F3A1075242D227900469282 /* RestCountriesEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A1074242D227900469282 /* RestCountriesEnvironment.swift */; };
-		7F3A1077242D245000469282 /* CountriesCollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A1076242D245000469282 /* CountriesCollectionPresenter.swift */; };
-		7F3A1079242D285300469282 /* PresentersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A1078242D285300469282 /* PresentersFactory.swift */; };
 		7F426782242D68EE00745C0B /* CountryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F426781242D68EE00745C0B /* CountryCellView.swift */; };
-		7F87BE06242D6C5F006CCC64 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87BE05242D6C5F006CCC64 /* Region.swift */; };
+		7FB1F9A8242D7C9700ACE217 /* FetchCountryAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1F9A7242D7C9700ACE217 /* FetchCountryAPITests.swift */; };
+		7FB1F9AA242D7CB400ACE217 /* CountriesCollectionPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1F9A9242D7CB400ACE217 /* CountriesCollectionPresenterTests.swift */; };
+		7FB1F9F2242D89B800ACE217 /* DataProviders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1F9EF242D89AC00ACE217 /* DataProviders.framework */; };
+		7FB1FA32242D8AD100ACE217 /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1FA2F242D8ACA00ACE217 /* Models.framework */; };
+		7FB1FA7B242D8C8B00ACE217 /* Presenters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1FA78242D8C8200ACE217 /* Presenters.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +29,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7F060C1424240BEA00B3CCDE;
 			remoteInfo = QuickHatchSample;
+		};
+		7FB1F9EE242D89AC00ACE217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FB1F9E9242D89AC00ACE217 /* DataProviders.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7FB1F9B5242D866D00ACE217;
+			remoteInfo = DataProviders;
+		};
+		7FB1F9F0242D89AC00ACE217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FB1F9E9242D89AC00ACE217 /* DataProviders.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7FB1F9BE242D866E00ACE217;
+			remoteInfo = DataProvidersTests;
+		};
+		7FB1FA2E242D8ACA00ACE217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FB1FA29242D8ACA00ACE217 /* Models.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7FB1F9FE242D8A3700ACE217;
+			remoteInfo = Models;
+		};
+		7FB1FA30242D8ACA00ACE217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FB1FA29242D8ACA00ACE217 /* Models.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7FB1FA07242D8A3700ACE217;
+			remoteInfo = ModelsTests;
+		};
+		7FB1FA77242D8C8200ACE217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FB1FA72242D8C8200ACE217 /* Presenters.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7FB1FA3D242D8BE500ACE217;
+			remoteInfo = Presenters;
+		};
+		7FB1FA79242D8C8200ACE217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FB1FA72242D8C8200ACE217 /* Presenters.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7FB1FA46242D8BE500ACE217;
+			remoteInfo = PresentersTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -47,15 +86,12 @@
 		7F060C2B24240BEB00B3CCDE /* QuickHatchSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickHatchSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F060C2F24240BEB00B3CCDE /* QuickHatchSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickHatchSampleTests.swift; sourceTree = "<group>"; };
 		7F060C3124240BEB00B3CCDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F060C3B24240D7F00B3CCDE /* QuickHatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickHatch.framework; path = Carthage/Build/iOS/QuickHatch.framework; sourceTree = "<group>"; };
-		7F3A106E242D1A6600469282 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
-		7F3A1070242D1C4F00469282 /* FetchCountryDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCountryDataProvider.swift; sourceTree = "<group>"; };
-		7F3A1072242D1DDE00469282 /* FetchCountryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCountryAPI.swift; sourceTree = "<group>"; };
-		7F3A1074242D227900469282 /* RestCountriesEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestCountriesEnvironment.swift; sourceTree = "<group>"; };
-		7F3A1076242D245000469282 /* CountriesCollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesCollectionPresenter.swift; sourceTree = "<group>"; };
-		7F3A1078242D285300469282 /* PresentersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentersFactory.swift; sourceTree = "<group>"; };
 		7F426781242D68EE00745C0B /* CountryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCellView.swift; sourceTree = "<group>"; };
-		7F87BE05242D6C5F006CCC64 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		7FB1F9A7242D7C9700ACE217 /* FetchCountryAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCountryAPITests.swift; sourceTree = "<group>"; };
+		7FB1F9A9242D7CB400ACE217 /* CountriesCollectionPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesCollectionPresenterTests.swift; sourceTree = "<group>"; };
+		7FB1F9E9242D89AC00ACE217 /* DataProviders.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DataProviders.xcodeproj; path = DataProviders/DataProviders.xcodeproj; sourceTree = SOURCE_ROOT; };
+		7FB1FA29242D8ACA00ACE217 /* Models.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Models.xcodeproj; path = Models/Models.xcodeproj; sourceTree = SOURCE_ROOT; };
+		7FB1FA72242D8C8200ACE217 /* Presenters.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Presenters.xcodeproj; path = Presenters/Presenters.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +99,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F060C3C24240D7F00B3CCDE /* QuickHatch.framework in Frameworks */,
+				7FB1FA7B242D8C8B00ACE217 /* Presenters.framework in Frameworks */,
+				7FB1FA32242D8AD100ACE217 /* Models.framework in Frameworks */,
+				7FB1F9F2242D89B800ACE217 /* DataProviders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +118,8 @@
 		7F060C0C24240BEA00B3CCDE = {
 			isa = PBXGroup;
 			children = (
-				7F060C1724240BEA00B3CCDE /* QuickHatchSample */,
-				7F060C2E24240BEB00B3CCDE /* QuickHatchSampleTests */,
+				7F060C1724240BEA00B3CCDE /* Sources */,
+				7F060C2E24240BEB00B3CCDE /* Tests */,
 				7F060C1624240BEA00B3CCDE /* Products */,
 				7F060C3A24240D7F00B3CCDE /* Frameworks */,
 			);
@@ -96,61 +134,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7F060C1724240BEA00B3CCDE /* QuickHatchSample */ = {
+		7F060C1724240BEA00B3CCDE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				7FB1F9E6242D898A00ACE217 /* Dependencies */,
 				7F060C422424110A00B3CCDE /* Application */,
-				7F060C3E2424108300B3CCDE /* Data Providers */,
-				7F060C3F2424108F00B3CCDE /* Models */,
-				7F060C3D2424107A00B3CCDE /* Presenters */,
 				7F060C40242410A900B3CCDE /* Supporting files */,
 				7F060C41242410ED00B3CCDE /* Views */,
 			);
-			path = QuickHatchSample;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		7F060C2E24240BEB00B3CCDE /* QuickHatchSampleTests */ = {
+		7F060C2E24240BEB00B3CCDE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				7F060C2F24240BEB00B3CCDE /* QuickHatchSampleTests.swift */,
 				7F060C3124240BEB00B3CCDE /* Info.plist */,
+				7FB1F9A7242D7C9700ACE217 /* FetchCountryAPITests.swift */,
+				7FB1F9A9242D7CB400ACE217 /* CountriesCollectionPresenterTests.swift */,
 			);
-			path = QuickHatchSampleTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		7F060C3A24240D7F00B3CCDE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7F060C3B24240D7F00B3CCDE /* QuickHatch.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7F060C3D2424107A00B3CCDE /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-				7F3A1076242D245000469282 /* CountriesCollectionPresenter.swift */,
-			);
-			path = Presenters;
-			sourceTree = "<group>";
-		};
-		7F060C3E2424108300B3CCDE /* Data Providers */ = {
-			isa = PBXGroup;
-			children = (
-				7F87BE07242D79CB006CCC64 /* Config */,
-				7F3A1070242D1C4F00469282 /* FetchCountryDataProvider.swift */,
-				7F3A1072242D1DDE00469282 /* FetchCountryAPI.swift */,
-			);
-			path = "Data Providers";
-			sourceTree = "<group>";
-		};
-		7F060C3F2424108F00B3CCDE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				7F3A106E242D1A6600469282 /* Country.swift */,
-				7F87BE05242D6C5F006CCC64 /* Region.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		7F060C40242410A900B3CCDE /* Supporting files */ = {
@@ -168,7 +178,6 @@
 				7F060C1C24240BEA00B3CCDE /* ViewController.swift */,
 				7F060C1E24240BEA00B3CCDE /* Main.storyboard */,
 				7F060C2324240BEB00B3CCDE /* LaunchScreen.storyboard */,
-				7F3A1078242D285300469282 /* PresentersFactory.swift */,
 				7F426781242D68EE00745C0B /* CountryCellView.swift */,
 			);
 			path = Views;
@@ -183,12 +192,41 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		7F87BE07242D79CB006CCC64 /* Config */ = {
+		7FB1F9E6242D898A00ACE217 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				7F3A1074242D227900469282 /* RestCountriesEnvironment.swift */,
+				7FB1FA72242D8C8200ACE217 /* Presenters.xcodeproj */,
+				7FB1FA29242D8ACA00ACE217 /* Models.xcodeproj */,
+				7FB1F9E9242D89AC00ACE217 /* DataProviders.xcodeproj */,
 			);
-			path = Config;
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		7FB1F9EA242D89AC00ACE217 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FB1F9EF242D89AC00ACE217 /* DataProviders.framework */,
+				7FB1F9F1242D89AC00ACE217 /* DataProvidersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FB1FA2A242D8ACA00ACE217 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FB1FA2F242D8ACA00ACE217 /* Models.framework */,
+				7FB1FA31242D8ACA00ACE217 /* ModelsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FB1FA73242D8C8200ACE217 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FB1FA78242D8C8200ACE217 /* Presenters.framework */,
+				7FB1FA7A242D8C8200ACE217 /* PresentersTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +239,6 @@
 				7F060C1124240BEA00B3CCDE /* Sources */,
 				7F060C1224240BEA00B3CCDE /* Frameworks */,
 				7F060C1324240BEA00B3CCDE /* Resources */,
-				7F3A107A242D5C2F00469282 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -260,6 +297,20 @@
 			mainGroup = 7F060C0C24240BEA00B3CCDE;
 			productRefGroup = 7F060C1624240BEA00B3CCDE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7FB1F9EA242D89AC00ACE217 /* Products */;
+					ProjectRef = 7FB1F9E9242D89AC00ACE217 /* DataProviders.xcodeproj */;
+				},
+				{
+					ProductGroup = 7FB1FA2A242D8ACA00ACE217 /* Products */;
+					ProjectRef = 7FB1FA29242D8ACA00ACE217 /* Models.xcodeproj */;
+				},
+				{
+					ProductGroup = 7FB1FA73242D8C8200ACE217 /* Products */;
+					ProjectRef = 7FB1FA72242D8C8200ACE217 /* Presenters.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7F060C1424240BEA00B3CCDE /* QuickHatchSample */,
@@ -267,6 +318,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7FB1F9EF242D89AC00ACE217 /* DataProviders.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DataProviders.framework;
+			remoteRef = 7FB1F9EE242D89AC00ACE217 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7FB1F9F1242D89AC00ACE217 /* DataProvidersTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DataProvidersTests.xctest;
+			remoteRef = 7FB1F9F0242D89AC00ACE217 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7FB1FA2F242D8ACA00ACE217 /* Models.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Models.framework;
+			remoteRef = 7FB1FA2E242D8ACA00ACE217 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7FB1FA31242D8ACA00ACE217 /* ModelsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ModelsTests.xctest;
+			remoteRef = 7FB1FA30242D8ACA00ACE217 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7FB1FA78242D8C8200ACE217 /* Presenters.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Presenters.framework;
+			remoteRef = 7FB1FA77242D8C8200ACE217 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7FB1FA7A242D8C8200ACE217 /* PresentersTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PresentersTests.xctest;
+			remoteRef = 7FB1FA79242D8C8200ACE217 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7F060C1324240BEA00B3CCDE /* Resources */ = {
@@ -288,42 +384,14 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		7F3A107A242D5C2F00469282 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/QuickHatch.framework",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		7F060C1124240BEA00B3CCDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F3A1075242D227900469282 /* RestCountriesEnvironment.swift in Sources */,
 				7F426782242D68EE00745C0B /* CountryCellView.swift in Sources */,
-				7F3A1077242D245000469282 /* CountriesCollectionPresenter.swift in Sources */,
-				7F3A1073242D1DDE00469282 /* FetchCountryAPI.swift in Sources */,
-				7F3A106F242D1A6600469282 /* Country.swift in Sources */,
 				7F060C1D24240BEA00B3CCDE /* ViewController.swift in Sources */,
-				7F3A1071242D1C4F00469282 /* FetchCountryDataProvider.swift in Sources */,
-				7F87BE06242D6C5F006CCC64 /* Region.swift in Sources */,
 				7F060C1924240BEA00B3CCDE /* AppDelegate.swift in Sources */,
-				7F3A1079242D285300469282 /* PresentersFactory.swift in Sources */,
 				7F060C1B24240BEA00B3CCDE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +400,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB1F9AA242D7CB400ACE217 /* CountriesCollectionPresenterTests.swift in Sources */,
+				7FB1F9A8242D7C9700ACE217 /* FetchCountryAPITests.swift in Sources */,
 				7F060C3024240BEB00B3CCDE /* QuickHatchSampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,11 +557,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = "QuickHatchSample/Supporting files/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Sources/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -511,11 +578,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = "QuickHatchSample/Supporting files/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Sources/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -534,7 +598,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = QuickHatchSampleTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -555,7 +619,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = QuickHatchSampleTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

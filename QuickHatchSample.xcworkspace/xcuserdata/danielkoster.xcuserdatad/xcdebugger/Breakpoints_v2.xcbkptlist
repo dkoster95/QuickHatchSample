@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "88A47E38-D813-4B18-9244-73E9B008E128"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00F05124-8972-4CA1-9BA0-EB7BAAE20434"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuickHatchSample/Views/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "85999766-7F46-434C-BEA4-310B79E0D18B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuickHatchSample/Presenters/CountriesCollectionPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "fetchData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30A27788-262F-46A1-AECF-650EB7AEBF5B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuickHatchSample/Presenters/CountriesCollectionPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "fetchData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81800CFC-9F0F-40C8-9A58-F7D18824662B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuickHatchSample/Data Providers/FetchCountryAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "fetchAllCountries(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "81800CFC-9F0F-40C8-9A58-F7D18824662B - ba0dfa9ace78d3ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;QuickHatch.Response&lt;Swift.Array&lt;QuickHatchSample.Country&gt;&gt;, Swift.Error&gt;) -&gt; () in QuickHatchSample.FetchCountryAPI.fetchAllCountries(completion: (Swift.Result&lt;Swift.Array&lt;QuickHatchSample.Country&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "QuickHatchSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielkoster/QuickHatchSample/QuickHatchSample/Data%20Providers/FetchCountryAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  uuid = "81800CFC-9F0F-40C8-9A58-F7D18824662B - 5186dae066c69039"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (QuickHatch.Response&lt;Swift.Array&lt;QuickHatchSample.Country&gt;&gt;) -&gt; Swift.Array&lt;QuickHatchSample.Country&gt; in closure #1 (Swift.Result&lt;QuickHatch.Response&lt;Swift.Array&lt;QuickHatchSample.Country&gt;&gt;, Swift.Error&gt;) -&gt; () in QuickHatchSample.FetchCountryAPI.fetchAllCountries(completion: (Swift.Result&lt;Swift.Array&lt;QuickHatchSample.Country&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "QuickHatchSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielkoster/QuickHatchSample/QuickHatchSample/Data%20Providers/FetchCountryAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BDE59F80-118A-4E7D-91F3-9C3B4649B59D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QuickHatchSample/Views/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
