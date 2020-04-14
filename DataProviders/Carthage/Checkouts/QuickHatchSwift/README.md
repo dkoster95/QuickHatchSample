@@ -1,9 +1,9 @@
 
 
-## 🌐 QuickHatch 🌐
+![](https://github.com/dkoster95/QuickHatchSwift/blob/master/logo.png)
 - **Use an abstract networking layer**
 - **Use a functional module for your requests**
-- **91.3 % Test coverage**
+- **94.3 % Test coverage**
 - **Keep networking simple**
 ---
 
@@ -11,14 +11,14 @@
 ## Features
 
 - **NetworkRequestFactory protocol**:
-	- [QuickHatch implementation](https://github.com/dkoster95/QuickHatchSwift/blob/master/Docs/GettingStarted.md)
+	- [Getting started](https://github.com/dkoster95/QuickHatchSwift/blob/master/Docs/GettingStarted.md)
 	- [Codable extensions](https://github.com/dkoster95/QuickHatchSwift/blob/master/Docs/CodableExtensions.md)
 	- [Image extension](https://github.com/dkoster95/QuickHatchSwift/blob/master/Docs/ImageExtension.md)
 	- [Data, String, JSON responses](https://github.com/dkoster95/QuickHatchSwift/blob/master/Docs/Responses.md)
 	- [Dispatcher extension](https://github.com/dkoster95/QuickHatchSwift/blob/master/Docs/DispatcherExtension.md)
 	- [Errors](https://github.com/dkoster95/QuickHatchSwift/blob/master/Docs/Error.md)
 - **URLRequest Additions**:
-	- [Methods oriented](https://github.com/dkoster95/QuickHatchSwift/blob/master/Docs/URLRequestExtension.md)
+	- [HTTP Methods oriented](https://github.com/dkoster95/QuickHatchSwift/blob/master/Docs/URLRequestExtension.md)
 - **Parameter Encoding**
 	- [URLEncoding](https://github.com/dkoster95/QuickHatchSwift/blob/master/Docs/URLEncoding.md)
 	- [JSONEncoding](https://github.com/dkoster95/QuickHatchSwift/blob/master/Docs/JSONEncoding.md)
@@ -42,6 +42,9 @@
 ## Requirements
 
 - iOS 11.0+ 
+- WatchOS 5.0+
+- TvOS 12.0+
+- MacOS 10.10+
 - Xcode 10.2+
 - Swift 5+
 
@@ -53,9 +56,9 @@
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate QuickHatch into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-git "https://github.com/dkoster95/QuickHatchSwift.git" "1.0"
+git "https://github.com/dkoster95/QuickHatchSwift.git" "1.1.1"
 ```
-
+Run `carthage update` to build the framework (you can specify the platform) and then drag the executable `QuickHatch.framework` into your Xcode project.
 ### Manually
 
 No Package manager? no problem, you can use QuickHatch as a git submodule

@@ -12,8 +12,9 @@ import Models
 
 public protocol CountriesCollectionPresenting {
     func fetchData()
-    func tapCountryItem()
+    func tapCountryItem(country: Country)
     var view: CountriesCollectionView? { set get }
+    func searchCountry(name: String)
 }
 
 public protocol CountriesCollectionView: class {
@@ -21,6 +22,7 @@ public protocol CountriesCollectionView: class {
     func showSpinner()
     func dismissSpinner()
     func showErrorMessage(message: String)
+    func loadDetails(for country: Country)
 }
 
 public class CountriesCollectionPresenter: CountriesCollectionPresenting {
@@ -45,11 +47,21 @@ public class CountriesCollectionPresenter: CountriesCollectionPresenting {
         }
     }
     
-    public func tapCountryItem() {
+    public func tapCountryItem(country: Country) {
         // push next screen
+        view?.loadDetails(for: country)
     }
     
-    
-    
-    
+    public func searchCountry(name: String) {
+        print("serach country \(name)")
+        dataProvider.getCountryByName(name: name) { [weak self] (result: Result<[Country], Error>) in
+            switch result {
+            case .success(let countries):
+                self?.view?.loadCountries(countries: countries)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+
 }

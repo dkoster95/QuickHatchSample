@@ -14,6 +14,10 @@ class ViewController: UIViewController, CountriesCollectionView, UITableViewDele
     private var countries: [Country] = []
     @IBOutlet weak var tableView: UITableView!
     private let refreshControl = UIRefreshControl()
+    @IBOutlet weak var searchBar: UISearchBar!
+    private var searchBarModel: SearchBarModel!
+    
+    
     func loadCountries(countries: [Country]) {
         print(countries)
         refreshControl.endRefreshing()
@@ -32,15 +36,30 @@ class ViewController: UIViewController, CountriesCollectionView, UITableViewDele
     func showErrorMessage(message: String) {
         
     }
+    
+    func loadDetails(for country: Country) {
+        let details = UIStoryboard.detailViewController(country: country)
+        navigationController?.pushViewController(details, animated: true)
+    }
+    
     var presenter: CountriesCollectionPresenting = PresentersFactory.countriesCollectionPresenter
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.addSubview(refreshControl)
-        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: UIControl.Event.valueChanged)
+        configureRefreshControl()
         self.presenter.view = self
         refreshControl.beginRefreshing()
         presenter.fetchData()
+        configureSeachBar()
+    }
+    
+    private func configureRefreshControl() {
+        tableView.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: UIControl.Event.valueChanged)
+    }
+    private func configureSeachBar() {
+        searchBarModel = SearchBarModel(searchBar: searchBar, presenter: presenter)
+        searchBarModel.configure()
     }
     
     @objc func refresh(sender:AnyObject) {
@@ -62,7 +81,11 @@ class ViewController: UIViewController, CountriesCollectionView, UITableViewDele
         cell?.setCountry(country: countries[indexPath.row])
         return cell!
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        presenter.tapCountryItem(country: countries[indexPath.row])
+    }
 
 }
 

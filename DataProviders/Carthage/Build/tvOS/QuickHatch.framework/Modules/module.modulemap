@@ -1,0 +1,4 @@
+framework module QuickHatch {
+  header "QuickHatch-Swift.h"
+  requires objc
+}

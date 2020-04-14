@@ -21,4 +21,7 @@ public struct Country: Codable {
     public let borders: [String]?
     public let currencies: [String]
     public let languages: [String]
+    public let population: Int
+    public let relevance: String?
 }
+

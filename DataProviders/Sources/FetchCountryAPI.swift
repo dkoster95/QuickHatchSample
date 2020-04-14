@@ -22,23 +22,29 @@ public class FetchCountryAPI: FetchCountryDataProvider, GenericAPI {
     }
     
     public func fetchAllCountries(completion completionHandler: @escaping (Result<[Country], Error>) -> Void) {
-        guard let url = URL(string: networkEnvironment.baseURL + "/all") else {
-            completionHandler(.failure(RequestError.malformedRequest))
-            return
-        }
-        guard let request = try? URLRequest.get(url: url,
+        guard let request = try? URLRequest.get(url: networkEnvironment.baseURL + "/all",
                                                 encoding: URLEncoding.default,
                                                 headers: networkEnvironment.headers) else {
             completionHandler(.failure(RequestError.malformedRequest))
             return
         }
-        networkFactory.array(request: request) { (result: Result<Response<[Country]>,Error>) in
+        networkFactory.response(request: request) { (result: Result<Response<[Country]>,Error>) in
             completionHandler(result.map({ $0.data }))
         }.resume()
     }
     
     public func getCountryByName(name: String, completionHandler: @escaping (Result<[Country], Error>) -> Void) {
-        
+        let urlPath = EncodingHelpers.escape("/name/{name}")
+        guard let request = try? URLRequest.get(url: networkEnvironment.baseURL + urlPath,
+                                                params: ["name": name],
+                                                encoding: StringEncoding.urlEncoding,
+                                                headers: networkEnvironment.headers) else {
+            completionHandler(.failure(RequestError.malformedRequest))
+            return
+        }
+        networkFactory.response(request: request) { (result: Result<Response<[Country]>,Error>) in
+            completionHandler(result.map({ $0.data }))
+        }.resume()
     }
     
     public func getCountryByCode(code: String, completionHandler: @escaping (Result<Country, Error>) -> Void) {
