@@ -47,8 +47,17 @@ public class FetchCountryAPI: FetchCountryDataProvider, GenericAPI {
         }.resume()
     }
     
-    public func getCountryByCode(code: String, completionHandler: @escaping (Result<Country, Error>) -> Void) {
-        
+    public func getCountryByCode(code: String, completionHandler: @escaping (Result<[Country], Error>) -> Void) {
+        guard let request = try? URLRequest.get(url: networkEnvironment.baseURL + "/alpha/",
+                                           params: ["codes": code],
+                                           encoding: URLEncoding.default,
+                                           headers: networkEnvironment.headers) else {
+                                            completionHandler(.failure(RequestError.malformedRequest))
+                                            return
+        }
+        networkFactory.response(request: request) { (result: Result<Response<[Country]>,Error>) in
+            completionHandler(result.map({ $0.data }))
+        }.resume()
     }
 }
 

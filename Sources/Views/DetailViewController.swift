@@ -8,11 +8,14 @@
 
 import UIKit
 import Models
+import Presenters
 
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     var country: Country?
+    var presenter: CountryDetailPresenting?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
@@ -47,7 +50,8 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "borderCell") as? BorderTableViewCell
-        cell?.name.text = country!.borders![indexPath.row]
+        cell?.configure(code: country!.borders![indexPath.row], presenter: presenter!)
+//        cell?.name.text = country!.borders![indexPath.row]
         return cell!
     }
     
@@ -76,6 +80,7 @@ extension UIStoryboard {
     static func detailViewController(country: Country) -> UIViewController {
         let detailViewController = UIStoryboard.init(name: "Main", bundle: .main).instantiateViewController(identifier: "Details") as? DetailViewController
         detailViewController?.country = country
+        detailViewController?.presenter = CountryDetailPresenter()
         return detailViewController!
     }
 }

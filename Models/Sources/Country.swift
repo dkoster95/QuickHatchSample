@@ -25,3 +25,29 @@ public struct Country: Codable {
     public let relevance: String?
 }
 
+
+public extension Country {
+    var languagesString: String {
+        var languagesString = ""
+        for language in languages {
+            languagesString += (language + ", ")
+        }
+        languagesString.removeLast(2)
+        return languagesString
+    }
+    var currenciesString: String {
+        var currenciesString = ""
+        for currency in currencies {
+            currenciesString += (currency + ", ")
+        }
+        currenciesString.removeLast(2)
+        return currenciesString
+    }
+    
+    var populationFormatted: String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        return  numberFormatter.string(from: NSNumber(value:population)) ?? population.description
+    }
+}
+

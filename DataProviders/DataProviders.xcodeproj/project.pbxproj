@@ -16,6 +16,12 @@
 		7FB1F9F3242D89DE00ACE217 /* RestCountriesEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1F9E1242D892900ACE217 /* RestCountriesEnvironment.swift */; };
 		7FB1FA22242D8A6700ACE217 /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1FA1F242D8A5E00ACE217 /* Models.framework */; };
 		7FB1FA23242D8A6700ACE217 /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1FA1F242D8A5E00ACE217 /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7FF6DEF52447C884000E33DA /* DataProvidersMocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FF6DEF32447C884000E33DA /* DataProvidersMocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FF6DEFC2447C89C000E33DA /* FetchCountryDataProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF6DEFB2447C89C000E33DA /* FetchCountryDataProviderMock.swift */; };
+		7FF6DEFD2447C8AA000E33DA /* DataProviders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1F9B5242D866D00ACE217 /* DataProviders.framework */; };
+		7FF6DEFE2447C8AA000E33DA /* DataProviders.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1F9B5242D866D00ACE217 /* DataProviders.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7FF6DF022447C8AE000E33DA /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1FA1F242D8A5E00ACE217 /* Models.framework */; };
+		7FF6DF032447C8AE000E33DA /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1FA1F242D8A5E00ACE217 /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,13 @@
 			remoteGlobalIDString = 7FB1FA07242D8A3700ACE217;
 			remoteInfo = ModelsTests;
 		};
+		7FF6DEFF2447C8AA000E33DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FB1F9AC242D866D00ACE217 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FB1F9B4242D866D00ACE217;
+			remoteInfo = DataProviders;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +63,18 @@
 			dstSubfolderSpec = 10;
 			files = (
 				7FB1FA23242D8A6700ACE217 /* Models.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF6DF012447C8AA000E33DA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7FF6DF032447C8AE000E33DA /* Models.framework in Embed Frameworks */,
+				7FF6DEFE2447C8AA000E33DA /* DataProviders.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +94,10 @@
 		7FB1F9E1242D892900ACE217 /* RestCountriesEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestCountriesEnvironment.swift; sourceTree = "<group>"; };
 		7FB1F9E3242D892900ACE217 /* FetchCountryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCountryAPI.swift; sourceTree = "<group>"; };
 		7FB1FA19242D8A5E00ACE217 /* Models.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Models.xcodeproj; path = ../../Models/Models.xcodeproj; sourceTree = "<group>"; };
+		7FF6DEF12447C884000E33DA /* DataProvidersMocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataProvidersMocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF6DEF32447C884000E33DA /* DataProvidersMocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataProvidersMocks.h; sourceTree = "<group>"; };
+		7FF6DEF42447C884000E33DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FF6DEFB2447C89C000E33DA /* FetchCountryDataProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCountryDataProviderMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +118,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7FF6DEEE2447C884000E33DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF6DF022447C8AE000E33DA /* Models.framework in Frameworks */,
+				7FF6DEFD2447C8AA000E33DA /* DataProviders.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -98,6 +136,7 @@
 				7FB1FA18242D8A5000ACE217 /* Dependencies */,
 				7FB1F9B7242D866D00ACE217 /* Sources */,
 				7FB1F9C2242D866E00ACE217 /* Tests */,
+				7FF6DEF22447C884000E33DA /* DataProvidersMocks */,
 				7FB1F9B6242D866D00ACE217 /* Products */,
 				7FB1F9D8242D870700ACE217 /* Frameworks */,
 			);
@@ -108,6 +147,7 @@
 			children = (
 				7FB1F9B5242D866D00ACE217 /* DataProviders.framework */,
 				7FB1F9BE242D866E00ACE217 /* DataProvidersTests.xctest */,
+				7FF6DEF12447C884000E33DA /* DataProvidersMocks.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +207,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7FF6DEF22447C884000E33DA /* DataProvidersMocks */ = {
+			isa = PBXGroup;
+			children = (
+				7FF6DEF32447C884000E33DA /* DataProvidersMocks.h */,
+				7FF6DEF42447C884000E33DA /* Info.plist */,
+				7FF6DEFB2447C89C000E33DA /* FetchCountryDataProviderMock.swift */,
+			);
+			path = DataProvidersMocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -175,6 +225,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FB1F9C6242D866E00ACE217 /* DataProviders.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF6DEEC2447C884000E33DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF6DEF52447C884000E33DA /* DataProvidersMocks.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +277,26 @@
 			productReference = 7FB1F9BE242D866E00ACE217 /* DataProvidersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7FF6DEF02447C884000E33DA /* DataProvidersMocks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF6DEFA2447C884000E33DA /* Build configuration list for PBXNativeTarget "DataProvidersMocks" */;
+			buildPhases = (
+				7FF6DEEC2447C884000E33DA /* Headers */,
+				7FF6DEED2447C884000E33DA /* Sources */,
+				7FF6DEEE2447C884000E33DA /* Frameworks */,
+				7FF6DEEF2447C884000E33DA /* Resources */,
+				7FF6DF012447C8AA000E33DA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FF6DF002447C8AA000E33DA /* PBXTargetDependency */,
+			);
+			name = DataProvidersMocks;
+			productName = DataProvidersMocks;
+			productReference = 7FF6DEF12447C884000E33DA /* DataProvidersMocks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -234,6 +312,10 @@
 					};
 					7FB1F9BD242D866E00ACE217 = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					7FF6DEF02447C884000E33DA = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -258,6 +340,7 @@
 			targets = (
 				7FB1F9B4242D866D00ACE217 /* DataProviders */,
 				7FB1F9BD242D866E00ACE217 /* DataProvidersTests */,
+				7FF6DEF02447C884000E33DA /* DataProvidersMocks */,
 			);
 		};
 /* End PBXProject section */
@@ -288,6 +371,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7FB1F9BC242D866E00ACE217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF6DEEF2447C884000E33DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -336,6 +426,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7FF6DEED2447C884000E33DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF6DEFC2447C89C000E33DA /* FetchCountryDataProviderMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -343,6 +441,11 @@
 			isa = PBXTargetDependency;
 			target = 7FB1F9B4242D866D00ACE217 /* DataProviders */;
 			targetProxy = 7FB1F9C0242D866E00ACE217 /* PBXContainerItemProxy */;
+		};
+		7FF6DF002447C8AA000E33DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FB1F9B4242D866D00ACE217 /* DataProviders */;
+			targetProxy = 7FF6DEFF2447C8AA000E33DA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -472,6 +575,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -489,6 +593,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dk.DataProviders;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -499,6 +604,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -516,6 +622,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dk.DataProviders;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -557,6 +664,55 @@
 			};
 			name = Release;
 		};
+		7FF6DEF62447C884000E33DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DataProvidersMocks/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dk.DataProvidersMocks;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FF6DEF72447C884000E33DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DataProvidersMocks/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dk.DataProvidersMocks;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +739,15 @@
 			buildConfigurations = (
 				7FB1F9CD242D866E00ACE217 /* Debug */,
 				7FB1F9CE242D866E00ACE217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF6DEFA2447C884000E33DA /* Build configuration list for PBXNativeTarget "DataProvidersMocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF6DEF62447C884000E33DA /* Debug */,
+				7FF6DEF72447C884000E33DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

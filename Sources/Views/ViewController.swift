@@ -47,7 +47,8 @@ class ViewController: UIViewController, CountriesCollectionView, UITableViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         configureRefreshControl()
-        self.presenter.view = self
+        tableView.tableFooterView = UIView()
+        presenter.view = self
         refreshControl.beginRefreshing()
         presenter.fetchData()
         configureSeachBar()

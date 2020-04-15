@@ -21,9 +21,9 @@ class SecondaryDetailsTableViewCell: UITableViewCell {
     @IBOutlet weak var currencies: UILabel!
     
     func configure(country: Country) {
-        population.text = "Population: \(country.population)"
-        languages.text = "Languages: \(country.languages)"
-        currencies.text = "Currencies: \(country.currencies)"
+        population.text = "Population: \(country.populationFormatted)"
+        languages.text = "Languages: \(country.languagesString)"
+        currencies.text = "Currencies: \(country.currenciesString)"
     }
     
 

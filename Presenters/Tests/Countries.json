@@ -1,0 +1,31 @@
+[
+    {
+        "name":"Uruguay",
+        "topLevelDomain":[".uy"],
+        "alpha2Code":"UY",
+        "alpha3Code":"URY",
+        "callingCodes":["598"],
+        "capital":"Montevideo",
+        "altSpellings":["UY","Oriental Republic of Uruguay","República Oriental del Uruguay"],
+        "region":"Americas",
+        "subregion":"South America",
+        "population":3415866,
+        "latlng":[-33.0,-56.0],
+        "demonym":"Uruguayan",
+        "area":181034.0,
+        "gini":39.7,
+        "timezones":["UTC-03:00"],
+        "borders":["ARG","BRA"],
+        "nativeName":"Uruguay",
+        "numericCode":"858",
+        "currencies":["UYI","UYU"],
+        "languages":["es"],
+        "translations":{
+            "de":"Uruguay",
+            "es":"Uruguay",
+            "fr":"Uruguay",
+            "ja":"ウルグアイ",
+            "it":"Uruguay"},
+        "relevance":"0"
+    }
+]

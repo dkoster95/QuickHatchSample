@@ -12,5 +12,5 @@ import Models
 public protocol FetchCountryDataProvider {
     func fetchAllCountries(completion completionHandler: @escaping (Result<[Country],Error>) -> Void)
     func getCountryByName(name: String, completionHandler: @escaping (Result<[Country],Error>) -> Void)
-    func getCountryByCode(code: String, completionHandler: @escaping (Result<Country,Error>) -> Void)
+    func getCountryByCode(code: String, completionHandler: @escaping (Result<[Country],Error>) -> Void)
 }

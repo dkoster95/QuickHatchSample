@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Presenters
 
 class BorderTableViewCell: UITableViewCell {
 
@@ -17,5 +18,11 @@ class BorderTableViewCell: UITableViewCell {
 
     @IBOutlet weak var name: UILabel!
     
+    func configure(code: String, presenter: CountryDetailPresenting) {
+        name.text = "--"
+        presenter.getCountryByCode(code: code) { [weak self] country in
+            self?.name.text = country?.name
+        }
+    }
 
 }
