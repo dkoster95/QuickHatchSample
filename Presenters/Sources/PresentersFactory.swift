@@ -13,6 +13,6 @@ public class PresentersFactory {
     init(){}
     
     public class var countriesCollectionPresenter: CountriesCollectionPresenting {
-        return CountriesCollectionPresenter(dataProvider: FetchCountryAPI())
+        return CountriesCollectionPresenter(dataProvider: CountryDataProvider())
     }
 }

@@ -2,10 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Presenters/Presenters.xcodeproj">
+      location = "group:CountriesAPI/CountriesAPI/CountriesAPI.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Models/Models.xcodeproj">
+      location = "group:CountriesAPI/Models/Models.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Presenters/Presenters.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:DataProviders/DataProviders.xcodeproj">

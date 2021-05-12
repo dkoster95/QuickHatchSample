@@ -6,4 +6,10 @@
 //  Copyright © 2021 Daniel Koster. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import Combine
+
+public protocol DataSourceLoadableCell: UITableViewCell {
+    associatedtype DataSourceType
+    func load(data: DataSourceType)
+}

@@ -7,63 +7,32 @@
 //
 
 import Foundation
-import QuickHatch
+import CountriesAPI
 import Models
 
-public class CountryDataProvider: FetchCountryDataProviderProtocol, GenericAPI {
+public class CountryDataProvider: CountryDataProviderProtocol {
+    private let api: CountryAPIProtocol
     
-    public var networkEnvironment: HostEnvironment
-    public var path: String { return "" }
-    let networkFactory: NetworkRequestFactory
-    
-    public init(networkEnvironment: HostEnvironment, networkRequestFactory: NetworkRequestFactory) {
-        self.networkEnvironment = networkEnvironment
-        networkFactory = networkRequestFactory
+    public init(api: CountryAPIProtocol) {
+        self.api = api
     }
     
-    public func fetchAllCountries(completion completionHandler: @escaping (Result<[Country], Error>) -> Void) {
-        guard let request = try? URLRequest.get(url: networkEnvironment.baseURL + "/all",
-                                                encoding: URLEncoding.default,
-                                                headers: networkEnvironment.headers) else {
-            completionHandler(.failure(RequestError.malformedRequest))
-            return
-        }
-        networkFactory.response(request: request) { (result: Result<Response<[Country]>,Error>) in
-            completionHandler(result.map({ $0.data }))
-        }.resume()
+    public func getAll(completion completionHandler: @escaping (Result<[Country], Error>) -> Void) {
+        api.getAll(completion: completionHandler)
     }
     
-    public func getCountryByName(name: String, completionHandler: @escaping (Result<[Country], Error>) -> Void) {
-        let urlPath = EncodingHelpers.escape("/name/{name}")
-        guard let request = try? URLRequest.get(url: networkEnvironment.baseURL + urlPath,
-                                                params: ["name": name],
-                                                encoding: StringEncoding.urlEncoding,
-                                                headers: networkEnvironment.headers) else {
-            completionHandler(.failure(RequestError.malformedRequest))
-            return
-        }
-        networkFactory.response(request: request) { (result: Result<Response<[Country]>,Error>) in
-            completionHandler(result.map({ $0.data }))
-        }.resume()
+    public func getBy(name: String, completionHandler: @escaping (Result<[Country], Error>) -> Void) {
+        api.getBy(name: name, completionHandler: completionHandler)
     }
     
-    public func getCountryByCode(code: String, completionHandler: @escaping (Result<[Country], Error>) -> Void) {
-        guard let request = try? URLRequest.get(url: networkEnvironment.baseURL + "/alpha/",
-                                           params: ["codes": code],
-                                           encoding: URLEncoding.default,
-                                           headers: networkEnvironment.headers) else {
-                                            completionHandler(.failure(RequestError.malformedRequest))
-                                            return
-        }
-        networkFactory.response(request: request) { (result: Result<Response<[Country]>,Error>) in
-            completionHandler(result.map({ $0.data }))
-        }.resume()
+    public func getBy(code: String, completionHandler: @escaping (Result<[Country], Error>) -> Void) {
+        api.getBy(code: code, completionHandler: completionHandler)
     }
+
 }
 
-public extension FetchCountryAPI {
+public extension CountryDataProvider {
     convenience init() {
-        self.init(networkEnvironment: RestCountriesEnvornment(),
-                  networkRequestFactory: QHRequestFactory(urlSession: URLSession.shared))
+        self.init(api:  CountryAPI())
     }
 }

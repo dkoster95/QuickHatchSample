@@ -12,10 +12,9 @@
 		7FB1FA4E242D8BE500ACE217 /* Presenters.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FB1FA40242D8BE500ACE217 /* Presenters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7FB1FA6B242D8C3500ACE217 /* DataProviders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1FA67242D8C2B00ACE217 /* DataProviders.framework */; };
 		7FB1FA6C242D8C3500ACE217 /* DataProviders.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1FA67242D8C2B00ACE217 /* DataProviders.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7FB1FA6D242D8C3500ACE217 /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1FA5E242D8C1E00ACE217 /* Models.framework */; };
-		7FB1FA6E242D8C3500ACE217 /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1FA5E242D8C1E00ACE217 /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7FB1FA71242D8C4B00ACE217 /* CountriesCollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1FA70242D8C4B00ACE217 /* CountriesCollectionPresenter.swift */; };
 		7FB1FA7D242D8CEB00ACE217 /* PresentersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1FA7C242D8CEB00ACE217 /* PresentersFactory.swift */; };
+		7FED411D264B578C005958B6 /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FED410C264B5750005958B6 /* Models.framework */; };
 		7FF6DEE72447C44E000E33DA /* CountryDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF6DEE62447C44E000E33DA /* CountryDetailPresenter.swift */; };
 		7FF6DF072447C9B1000E33DA /* DataProvidersMocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF6DF062447C9B1000E33DA /* DataProvidersMocks.framework */; };
 		7FF6DF092447C9E1000E33DA /* CountriesCollectionPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF6DF082447C9E1000E33DA /* CountriesCollectionPresenterTests.swift */; };
@@ -32,20 +31,6 @@
 			remoteGlobalIDString = 7FB1FA3C242D8BE500ACE217;
 			remoteInfo = Presenters;
 		};
-		7FB1FA5D242D8C1E00ACE217 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7FB1FA58242D8C1E00ACE217 /* Models.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7FB1F9FE242D8A3700ACE217;
-			remoteInfo = Models;
-		};
-		7FB1FA5F242D8C1E00ACE217 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7FB1FA58242D8C1E00ACE217 /* Models.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7FB1FA07242D8A3700ACE217;
-			remoteInfo = ModelsTests;
-		};
 		7FB1FA66242D8C2B00ACE217 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7FB1FA61242D8C2B00ACE217 /* DataProviders.xcodeproj */;
@@ -59,6 +44,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 7FB1F9BE242D866E00ACE217;
 			remoteInfo = DataProvidersTests;
+		};
+		7FED410B264B5750005958B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FED4106264B5750005958B6 /* Models.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7FB1F9FE242D8A3700ACE217;
+			remoteInfo = Models;
+		};
+		7FED410D264B5750005958B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FED4106264B5750005958B6 /* Models.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7FB1FA07242D8A3700ACE217;
+			remoteInfo = ModelsTests;
 		};
 		7FF6DF052447C9B1000E33DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -76,7 +75,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7FB1FA6E242D8C3500ACE217 /* Models.framework in Embed Frameworks */,
 				7FB1FA6C242D8C3500ACE217 /* DataProviders.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -91,10 +89,10 @@
 		7FB1FA46242D8BE500ACE217 /* PresentersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB1FA4B242D8BE500ACE217 /* PresentersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentersTests.swift; sourceTree = "<group>"; };
 		7FB1FA4D242D8BE500ACE217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FB1FA58242D8C1E00ACE217 /* Models.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Models.xcodeproj; path = ../../Models/Models.xcodeproj; sourceTree = "<group>"; };
 		7FB1FA61242D8C2B00ACE217 /* DataProviders.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DataProviders.xcodeproj; path = ../../DataProviders/DataProviders.xcodeproj; sourceTree = "<group>"; };
 		7FB1FA70242D8C4B00ACE217 /* CountriesCollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesCollectionPresenter.swift; sourceTree = "<group>"; };
 		7FB1FA7C242D8CEB00ACE217 /* PresentersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentersFactory.swift; sourceTree = "<group>"; };
+		7FED4106264B5750005958B6 /* Models.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Models.xcodeproj; path = ../../CountriesAPI/Models/Models.xcodeproj; sourceTree = "<group>"; };
 		7FF6DEE62447C44E000E33DA /* CountryDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailPresenter.swift; sourceTree = "<group>"; };
 		7FF6DF082447C9E1000E33DA /* CountriesCollectionPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesCollectionPresenterTests.swift; sourceTree = "<group>"; };
 		7FF6DF0A2447CA43000E33DA /* CountriesCollectionViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesCollectionViewMock.swift; sourceTree = "<group>"; };
@@ -107,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FB1FA6D242D8C3500ACE217 /* Models.framework in Frameworks */,
+				7FED411D264B578C005958B6 /* Models.framework in Frameworks */,
 				7FB1FA6B242D8C3500ACE217 /* DataProviders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,19 +170,10 @@
 		7FB1FA57242D8BFD00ACE217 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				7FED4106264B5750005958B6 /* Models.xcodeproj */,
 				7FB1FA61242D8C2B00ACE217 /* DataProviders.xcodeproj */,
-				7FB1FA58242D8C1E00ACE217 /* Models.xcodeproj */,
 			);
 			path = Dependencies;
-			sourceTree = "<group>";
-		};
-		7FB1FA59242D8C1E00ACE217 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7FB1FA5E242D8C1E00ACE217 /* Models.framework */,
-				7FB1FA60242D8C1E00ACE217 /* ModelsTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		7FB1FA62242D8C2B00ACE217 /* Products */ = {
@@ -202,6 +191,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FED4107264B5750005958B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FED410C264B5750005958B6 /* Models.framework */,
+				7FED410E264B5750005958B6 /* ModelsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +260,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Daniel Koster";
 				TargetAttributes = {
 					7FB1FA3C242D8BE500ACE217 = {
@@ -290,8 +288,8 @@
 					ProjectRef = 7FB1FA61242D8C2B00ACE217 /* DataProviders.xcodeproj */;
 				},
 				{
-					ProductGroup = 7FB1FA59242D8C1E00ACE217 /* Products */;
-					ProjectRef = 7FB1FA58242D8C1E00ACE217 /* Models.xcodeproj */;
+					ProductGroup = 7FED4107264B5750005958B6 /* Products */;
+					ProjectRef = 7FED4106264B5750005958B6 /* Models.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -303,20 +301,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		7FB1FA5E242D8C1E00ACE217 /* Models.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Models.framework;
-			remoteRef = 7FB1FA5D242D8C1E00ACE217 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7FB1FA60242D8C1E00ACE217 /* ModelsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ModelsTests.xctest;
-			remoteRef = 7FB1FA5F242D8C1E00ACE217 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		7FB1FA67242D8C2B00ACE217 /* DataProviders.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -329,6 +313,20 @@
 			fileType = wrapper.cfbundle;
 			path = DataProvidersTests.xctest;
 			remoteRef = 7FB1FA68242D8C2B00ACE217 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7FED410C264B5750005958B6 /* Models.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Models.framework;
+			remoteRef = 7FED410B264B5750005958B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7FED410E264B5750005958B6 /* ModelsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ModelsTests.xctest;
+			remoteRef = 7FED410D264B5750005958B6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		7FF6DF062447C9B1000E33DA /* DataProvidersMocks.framework */ = {
@@ -417,6 +415,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -480,6 +479,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

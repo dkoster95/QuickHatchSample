@@ -15,14 +15,14 @@ public protocol CountryDetailPresenting {
 }
 
 public class CountryDetailPresenter: CountryDetailPresenting {
-    private let fetchCountryDataProvider: FetchCountryDataProvider
+    private let dataProvider: CountryDataProviderProtocol
     
-    public init(fetchCountryDataProvider: FetchCountryDataProvider) {
-        self.fetchCountryDataProvider = fetchCountryDataProvider
+    public init(dataProvider: CountryDataProviderProtocol) {
+        self.dataProvider = dataProvider
     }
     
     public func getCountryByCode(code: String, onSuccess: @escaping (Country?) -> Void) {
-        fetchCountryDataProvider.getCountryByCode(code: code) { result in
+        dataProvider.getBy(code: code) { result in
             guard let results = try? result.get(), let country = results.first else {
                 onSuccess(nil)
                 return
@@ -35,6 +35,6 @@ public class CountryDetailPresenter: CountryDetailPresenting {
 
 public extension CountryDetailPresenter {
     convenience init() {
-        self.init(fetchCountryDataProvider: FetchCountryAPI())
+        self.init(dataProvider: CountryDataProvider())
     }
 }

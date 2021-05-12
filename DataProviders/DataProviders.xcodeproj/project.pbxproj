@@ -3,25 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7FB1F9BF242D866E00ACE217 /* DataProviders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1F9B5242D866D00ACE217 /* DataProviders.framework */; };
 		7FB1F9C4242D866E00ACE217 /* DataProvidersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1F9C3242D866E00ACE217 /* DataProvidersTests.swift */; };
 		7FB1F9C6242D866E00ACE217 /* DataProviders.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FB1F9B8242D866D00ACE217 /* DataProviders.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7FB1F9DF242D890300ACE217 /* QuickHatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1F9DE242D890300ACE217 /* QuickHatch.framework */; };
-		7FB1F9E4242D892900ACE217 /* FetchCountryDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1F9E0242D892900ACE217 /* FetchCountryDataProvider.swift */; };
-		7FB1F9E5242D892900ACE217 /* FetchCountryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1F9E3242D892900ACE217 /* FetchCountryAPI.swift */; };
+		7FB1F9E4242D892900ACE217 /* CountryDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1F9E0242D892900ACE217 /* CountryDataProviderProtocol.swift */; };
+		7FB1F9E5242D892900ACE217 /* CountryDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1F9E3242D892900ACE217 /* CountryDataProvider.swift */; };
 		7FB1F9F3242D89DE00ACE217 /* RestCountriesEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1F9E1242D892900ACE217 /* RestCountriesEnvironment.swift */; };
-		7FB1FA22242D8A6700ACE217 /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1FA1F242D8A5E00ACE217 /* Models.framework */; };
-		7FB1FA23242D8A6700ACE217 /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1FA1F242D8A5E00ACE217 /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7FED4140264B57EC005958B6 /* CountriesAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FED413D264B57E1005958B6 /* CountriesAPI.framework */; };
+		7FED4141264B57EC005958B6 /* CountriesAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FED413D264B57E1005958B6 /* CountriesAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7FED4142264B57EC005958B6 /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FED4134264B57D5005958B6 /* Models.framework */; };
+		7FED4143264B57EC005958B6 /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FED4134264B57D5005958B6 /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7FF6DEF52447C884000E33DA /* DataProvidersMocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FF6DEF32447C884000E33DA /* DataProvidersMocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7FF6DEFC2447C89C000E33DA /* FetchCountryDataProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF6DEFB2447C89C000E33DA /* FetchCountryDataProviderMock.swift */; };
 		7FF6DEFD2447C8AA000E33DA /* DataProviders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1F9B5242D866D00ACE217 /* DataProviders.framework */; };
 		7FF6DEFE2447C8AA000E33DA /* DataProviders.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1F9B5242D866D00ACE217 /* DataProviders.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7FF6DF022447C8AE000E33DA /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1FA1F242D8A5E00ACE217 /* Models.framework */; };
-		7FF6DF032447C8AE000E33DA /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB1FA1F242D8A5E00ACE217 /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,19 +31,33 @@
 			remoteGlobalIDString = 7FB1F9B4242D866D00ACE217;
 			remoteInfo = DataProviders;
 		};
-		7FB1FA1E242D8A5E00ACE217 /* PBXContainerItemProxy */ = {
+		7FED4133264B57D5005958B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7FB1FA19242D8A5E00ACE217 /* Models.xcodeproj */;
+			containerPortal = 7FED412E264B57D5005958B6 /* Models.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7FB1F9FE242D8A3700ACE217;
 			remoteInfo = Models;
 		};
-		7FB1FA20242D8A5E00ACE217 /* PBXContainerItemProxy */ = {
+		7FED4135264B57D5005958B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7FB1FA19242D8A5E00ACE217 /* Models.xcodeproj */;
+			containerPortal = 7FED412E264B57D5005958B6 /* Models.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7FB1FA07242D8A3700ACE217;
 			remoteInfo = ModelsTests;
+		};
+		7FED413C264B57E1005958B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FED4137264B57E1005958B6 /* CountriesAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7FED4088264B490C005958B6;
+			remoteInfo = CountriesAPI;
+		};
+		7FED413E264B57E1005958B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FED4137264B57E1005958B6 /* CountriesAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7FED4091264B490C005958B6;
+			remoteInfo = CountriesAPITests;
 		};
 		7FF6DEFF2447C8AA000E33DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -62,7 +75,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7FB1FA23242D8A6700ACE217 /* Models.framework in Embed Frameworks */,
+				7FED4143264B57EC005958B6 /* Models.framework in Embed Frameworks */,
+				7FED4141264B57EC005958B6 /* CountriesAPI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,7 +87,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7FF6DF032447C8AE000E33DA /* Models.framework in Embed Frameworks */,
 				7FF6DEFE2447C8AA000E33DA /* DataProviders.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -90,10 +103,11 @@
 		7FB1F9C5242D866E00ACE217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FB1F9D9242D870700ACE217 /* QuickHatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickHatch.framework; path = ../Carthage/Build/iOS/QuickHatch.framework; sourceTree = "<group>"; };
 		7FB1F9DE242D890300ACE217 /* QuickHatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickHatch.framework; path = Carthage/Build/iOS/QuickHatch.framework; sourceTree = "<group>"; };
-		7FB1F9E0242D892900ACE217 /* FetchCountryDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCountryDataProvider.swift; sourceTree = "<group>"; };
+		7FB1F9E0242D892900ACE217 /* CountryDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataProviderProtocol.swift; sourceTree = "<group>"; };
 		7FB1F9E1242D892900ACE217 /* RestCountriesEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestCountriesEnvironment.swift; sourceTree = "<group>"; };
-		7FB1F9E3242D892900ACE217 /* FetchCountryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCountryAPI.swift; sourceTree = "<group>"; };
-		7FB1FA19242D8A5E00ACE217 /* Models.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Models.xcodeproj; path = ../../Models/Models.xcodeproj; sourceTree = "<group>"; };
+		7FB1F9E3242D892900ACE217 /* CountryDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataProvider.swift; sourceTree = "<group>"; };
+		7FED412E264B57D5005958B6 /* Models.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Models.xcodeproj; path = ../../CountriesAPI/Models/Models.xcodeproj; sourceTree = "<group>"; };
+		7FED4137264B57E1005958B6 /* CountriesAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CountriesAPI.xcodeproj; path = ../../CountriesAPI/CountriesAPI/CountriesAPI.xcodeproj; sourceTree = "<group>"; };
 		7FF6DEF12447C884000E33DA /* DataProvidersMocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataProvidersMocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF6DEF32447C884000E33DA /* DataProvidersMocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataProvidersMocks.h; sourceTree = "<group>"; };
 		7FF6DEF42447C884000E33DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,8 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FB1FA22242D8A6700ACE217 /* Models.framework in Frameworks */,
-				7FB1F9DF242D890300ACE217 /* QuickHatch.framework in Frameworks */,
+				7FED4140264B57EC005958B6 /* CountriesAPI.framework in Frameworks */,
+				7FED4142264B57EC005958B6 /* Models.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +136,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FF6DF022447C8AE000E33DA /* Models.framework in Frameworks */,
 				7FF6DEFD2447C8AA000E33DA /* DataProviders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,8 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				7FB1F9E2242D892900ACE217 /* Config */,
-				7FB1F9E0242D892900ACE217 /* FetchCountryDataProvider.swift */,
-				7FB1F9E3242D892900ACE217 /* FetchCountryAPI.swift */,
+				7FB1F9E0242D892900ACE217 /* CountryDataProviderProtocol.swift */,
+				7FB1F9E3242D892900ACE217 /* CountryDataProvider.swift */,
 				7FB1F9B8242D866D00ACE217 /* DataProviders.h */,
 				7FB1F9B9242D866D00ACE217 /* Info.plist */,
 			);
@@ -193,16 +206,26 @@
 		7FB1FA18242D8A5000ACE217 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				7FB1FA19242D8A5E00ACE217 /* Models.xcodeproj */,
+				7FED4137264B57E1005958B6 /* CountriesAPI.xcodeproj */,
+				7FED412E264B57D5005958B6 /* Models.xcodeproj */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
 		};
-		7FB1FA1A242D8A5E00ACE217 /* Products */ = {
+		7FED412F264B57D5005958B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FB1FA1F242D8A5E00ACE217 /* Models.framework */,
-				7FB1FA21242D8A5E00ACE217 /* ModelsTests.xctest */,
+				7FED4134264B57D5005958B6 /* Models.framework */,
+				7FED4136264B57D5005958B6 /* ModelsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FED4138264B57E1005958B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FED413D264B57E1005958B6 /* CountriesAPI.framework */,
+				7FED413F264B57E1005958B6 /* CountriesAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,6 +278,8 @@
 			dependencies = (
 			);
 			name = DataProviders;
+			packageProductDependencies = (
+			);
 			productName = DataProviders;
 			productReference = 7FB1F9B5242D866D00ACE217 /* DataProviders.framework */;
 			productType = "com.apple.product-type.framework";
@@ -304,7 +329,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Daniel Koster";
 				TargetAttributes = {
 					7FB1F9B4242D866D00ACE217 = {
@@ -328,12 +353,19 @@
 				Base,
 			);
 			mainGroup = 7FB1F9AB242D866D00ACE217;
+			packageReferences = (
+				7F904E552534BA320043FF48 /* XCRemoteSwiftPackageReference "QuickHatchSwift" */,
+			);
 			productRefGroup = 7FB1F9B6242D866D00ACE217 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 7FB1FA1A242D8A5E00ACE217 /* Products */;
-					ProjectRef = 7FB1FA19242D8A5E00ACE217 /* Models.xcodeproj */;
+					ProductGroup = 7FED4138264B57E1005958B6 /* Products */;
+					ProjectRef = 7FED4137264B57E1005958B6 /* CountriesAPI.xcodeproj */;
+				},
+				{
+					ProductGroup = 7FED412F264B57D5005958B6 /* Products */;
+					ProjectRef = 7FED412E264B57D5005958B6 /* Models.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -346,18 +378,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		7FB1FA1F242D8A5E00ACE217 /* Models.framework */ = {
+		7FED4134264B57D5005958B6 /* Models.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Models.framework;
-			remoteRef = 7FB1FA1E242D8A5E00ACE217 /* PBXContainerItemProxy */;
+			remoteRef = 7FED4133264B57D5005958B6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		7FB1FA21242D8A5E00ACE217 /* ModelsTests.xctest */ = {
+		7FED4136264B57D5005958B6 /* ModelsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ModelsTests.xctest;
-			remoteRef = 7FB1FA20242D8A5E00ACE217 /* PBXContainerItemProxy */;
+			remoteRef = 7FED4135264B57D5005958B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7FED413D264B57E1005958B6 /* CountriesAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CountriesAPI.framework;
+			remoteRef = 7FED413C264B57E1005958B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7FED413F264B57E1005958B6 /* CountriesAPITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CountriesAPITests.xctest;
+			remoteRef = 7FED413E264B57E1005958B6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -413,8 +459,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FB1F9F3242D89DE00ACE217 /* RestCountriesEnvironment.swift in Sources */,
-				7FB1F9E5242D892900ACE217 /* FetchCountryAPI.swift in Sources */,
-				7FB1F9E4242D892900ACE217 /* FetchCountryDataProvider.swift in Sources */,
+				7FB1F9E5242D892900ACE217 /* CountryDataProvider.swift in Sources */,
+				7FB1F9E4242D892900ACE217 /* CountryDataProviderProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +522,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -539,6 +586,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -753,6 +801,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F904E552534BA320043FF48 /* XCRemoteSwiftPackageReference "QuickHatchSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkoster95/QuickHatchSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 7FB1F9AC242D866D00ACE217 /* Project object */;
 }

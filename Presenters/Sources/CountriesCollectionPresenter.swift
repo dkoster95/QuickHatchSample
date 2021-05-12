@@ -28,15 +28,15 @@ public protocol CountriesCollectionView: class {
 public class CountriesCollectionPresenter: CountriesCollectionPresenting {
     
     public weak var view: CountriesCollectionView?
-    public let dataProvider: FetchCountryDataProvider
+    public let dataProvider: CountryDataProviderProtocol
     
-    public init(dataProvider: FetchCountryDataProvider) {
+    public init(dataProvider: CountryDataProviderProtocol) {
         self.dataProvider = dataProvider
     }
     
     public func fetchData() {
         view?.showSpinner()
-        dataProvider.fetchAllCountries { [weak self] (result: Result<[Country],Error>) in
+        dataProvider.getAll { [weak self] (result: Result<[Country],Error>) in
             self?.view?.dismissSpinner()
             switch result {
             case .success(let countries):
@@ -54,7 +54,7 @@ public class CountriesCollectionPresenter: CountriesCollectionPresenting {
     
     public func searchCountry(name: String) {
         print("serach country \(name)")
-        dataProvider.getCountryByName(name: name) { [weak self] (result: Result<[Country], Error>) in
+        dataProvider.getBy(name: name) { [weak self] (result: Result<[Country], Error>) in
             switch result {
             case .success(let countries):
                 self?.view?.loadCountries(countries: countries)

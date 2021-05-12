@@ -12,24 +12,18 @@ import Presenters
 class SearchBarModel: NSObject, UISearchBarDelegate {
     private let searchBar: UISearchBar
     private var timer: Timer? = nil
-    private let presenter: CountriesCollectionPresenting
+    private let action: (String) -> ()
     
-    init(searchBar: UISearchBar, presenter: CountriesCollectionPresenting) {
+    init(searchBar: UISearchBar, action: @escaping (String) -> ()) {
         self.searchBar = searchBar
-        self.presenter = presenter
-    }
-    
-    func configure() {
+        self.action = action
+        super.init()
         self.searchBar.delegate = self
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         throttle(after: 0.3) { [weak self] in
-            if searchText.isEmpty {
-                self?.presenter.fetchData()
-            } else {
-                self?.presenter.searchCountry(name: searchText)
-            }
+            self?.action(searchText)
         }
     }
     

@@ -31,6 +31,7 @@ class ViewController: UIViewController, CountriesCollectionView, UITableViewDele
     
     func dismissSpinner() {
         print("dismiss spinner")
+        refreshControl.endRefreshing()
     }
     
     func showErrorMessage(message: String) {
@@ -59,8 +60,9 @@ class ViewController: UIViewController, CountriesCollectionView, UITableViewDele
         refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: UIControl.Event.valueChanged)
     }
     private func configureSeachBar() {
-        searchBarModel = SearchBarModel(searchBar: searchBar, presenter: presenter)
-        searchBarModel.configure()
+        searchBarModel = SearchBarModel(searchBar: searchBar) { [weak self] searchText in
+            searchText.isEmpty ? self?.presenter.fetchData() : self?.presenter.searchCountry(name: searchText)
+        }
     }
     
     @objc func refresh(sender:AnyObject) {
