@@ -10,7 +10,7 @@ import Foundation
 import QuickHatch
 import Models
 
-public class FetchCountryAPI: FetchCountryDataProvider, GenericAPI {
+public class CountryDataProvider: FetchCountryDataProviderProtocol, GenericAPI {
     
     public var networkEnvironment: HostEnvironment
     public var path: String { return "" }
@@ -64,6 +64,6 @@ public class FetchCountryAPI: FetchCountryDataProvider, GenericAPI {
 public extension FetchCountryAPI {
     convenience init() {
         self.init(networkEnvironment: RestCountriesEnvornment(),
-                  networkRequestFactory: QuickHatchRequestFactory(urlSession: .shared))
+                  networkRequestFactory: QHRequestFactory(urlSession: URLSession.shared))
     }
 }

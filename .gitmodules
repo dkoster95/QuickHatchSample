@@ -1,0 +1,3 @@
+[submodule "CountriesAPI"]
+	path = CountriesAPI
+	url = https://github.com/dkoster95/CountriesAPI.git
